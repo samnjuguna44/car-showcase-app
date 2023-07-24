@@ -3,6 +3,7 @@ import { CarCard, CustomFilter, Hero, SearchBar } from "@/components";
 import { fuels, yearsOfProduction } from "../constants";
 import ShowMore from "@/components/ShowMore";
 import { HomeProps } from "../types";
+import { Analytics } from '@vercel/analytics/react';
 
 export default async function Home({ searchParams }: HomeProps) {
   const allCars = await fetchCars({
@@ -55,6 +56,7 @@ export default async function Home({ searchParams }: HomeProps) {
 
 
       </div>
+      <Analytics />
     </main>
   );
 }
