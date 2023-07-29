@@ -1,15 +1,20 @@
 This is a [Next.js](https://nextjs.org/) project tht allows users to rent cars. It uses an API from RaidAPI client to provide the cars and an API from Imagin.studio to provide images for the cars in all angles.
 
-## Getting Started
+## CAR SHOWCASE APP
 
-First, run the development server:
+Discover the best cars in the world for rental
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+NOTE:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Nextjs has a bug updating search params resets scroll position.
+Solution: change the app to client side rendering - use useState and useEffect.
+I used default car image from IMAGEIN STUDIO since their services are not free
+I load the placeholder image on error from imagein studio car image url
+Solution: pay for imagein studio or get another free service.( still looking for one)
+SAMPLE ENV:
+
+NEXT_PUBLIC_RAPID_API_KEY='RAPI API KEY' NEXT_PUBLIC_IMAGIN_API_KEY='API KEY'
+
+THEN:
+
+yarn/npm install yarn/npm run dev
